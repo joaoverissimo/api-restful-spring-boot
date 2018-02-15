@@ -1,0 +1,43 @@
+version: '2'
+services:
+  curso-api-java-mysql:
+    image: mysql:5.7
+    container_name: curso-api-java-mysql
+    networks:
+      static-network:
+        ipv4_address: 182.21.128.2
+    volumes:
+     - ./mysql:/var/lib/mysql
+    command: mysqld --sql-mode=
+    environment:
+     - MYSQL_ROOT_PASSWORD=12345
+     - MYSQL_USER=user
+     - MYSQL_PASSWORD=12345
+    ports:
+     - "9090:3306"
+
+  curso-api-java-phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: curso-api-java-phpmyadmin
+    networks:
+      static-network:
+        ipv4_address: 182.21.128.3
+    environment:
+     - PMA_ARBITRARY=1
+     - PMA_HOST=182.21.128.2
+     - PMA_USER=root
+     - PMA_PASSWORD=12345
+    restart: always
+    ports:
+     - 181:80
+    volumes:
+     - /sessions
+    links:
+     - curso-api-java-mysql
+
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 182.21.0.0/16
+          ip_range: 182.28.5.0/24
