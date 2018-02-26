@@ -1,0 +1,3 @@
+- O curso ficou mais como uma apresentação do código do que aulas com possíveis caminhos.
+- algumas explicações importantes estavam apenas no material de referência, que é disponibilizado com o curso. 
+- os controllers possuem muita lógica, legal seria refatorar para manter no service.

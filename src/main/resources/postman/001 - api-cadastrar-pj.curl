@@ -1,0 +1,13 @@
+curl -X POST \
+  http://localhost:8090/api/cadastrar-pj \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: a48641a6-4b0f-f12f-34fc-c03ca6ebecbf' \
+  -d '{
+	"nome": "João Verissimo Ribeiro",
+	"email": "joao@hotmail.aom",
+	"senha": "12345",
+	"cpf": "83831942269",
+	"razaoSocial": "Joao Corp",
+	"cnpj": "80379738000140"
+}'

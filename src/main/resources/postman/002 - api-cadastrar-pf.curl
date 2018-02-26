@@ -1,0 +1,13 @@
+curl -X POST \
+  http://localhost:8090/api/cadastrar-pf \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 5a2ff787-f3b1-b8cb-fa7b-aadf11786793' \
+  -d '{
+	"nome": "Fulano de Tal",
+	"email": "fulano@hotmail.aom",
+	"senha": "123456",
+	"cpf": "75441688165",
+	"valorHora": "50",
+	"cnpj": "80379738000140"
+}'
