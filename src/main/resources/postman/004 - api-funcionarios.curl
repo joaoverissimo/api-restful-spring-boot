@@ -1,0 +1,11 @@
+curl -X PUT \
+  http://localhost:8090/api/funcionarios/2 \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: ffc6eb04-d399-df86-5a95-dfa304c10729' \
+  -d '{
+	"nome": "Fulano de Tal",
+	"valorHora": "60",
+	"email": "fulano@hotmail.com",
+	"qtdHorasTrabalhoDia": 8.5
+}'
