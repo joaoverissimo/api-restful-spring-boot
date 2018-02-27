@@ -1,0 +1,12 @@
+curl -X POST \
+  http://localhost:8090/api/lancamentos \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: feee537b-228d-2855-cbc0-6253b3b8b22b' \
+  -d '{
+	"data": "2018-02-26 09:00:00",
+	"tipo": "INICIO_TRABALHO",
+	"descricao": "Início de Trabalho",	
+	"localizacao": "1.23432,2.1235",
+	"funcionarioId": "2"
+}'

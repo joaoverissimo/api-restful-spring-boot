@@ -1,0 +1,12 @@
+curl -X GET \
+  'http://localhost:8090/api/lancamentos/funcionario/2?dir=ASC&pag=1' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: cf9ca1cc-d50f-975c-0a44-60b0cda8353e' \
+  -d '{
+	"data": "2018-02-26 09:00:00",
+	"tipo": "TERMINO_TRABALHO",
+	"descricao": "Término de Trabalho alterado",	
+	"localizacao": "1.23432,2.1235",
+	"funcionarioId": "2"
+}'

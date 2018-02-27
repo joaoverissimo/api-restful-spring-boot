@@ -1,0 +1,5 @@
+curl -X DELETE \
+  http://localhost:8090/api/lancamentos/1 \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 91c3c92d-7304-fccf-8657-d5c6e7b4a3c9'
