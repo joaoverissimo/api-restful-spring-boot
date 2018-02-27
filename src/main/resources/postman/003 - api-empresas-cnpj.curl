@@ -1,0 +1,12 @@
+curl -X GET \
+  http://localhost:8090/api/empresas/cnpj/80379738000140 \
+  -H 'cache-control: no-cache' \
+  -H 'postman-token: f1d326ca-ec75-0c58-afa6-01031d3b6793' \
+  -d '{
+	"nome": "Fulano de Tal",
+	"email": "fulano@hotmail.aom",
+	"senha": "123456",
+	"cpf": "75441688165",
+	"valorHora": "50",
+	"cnpj": "80379738000140"
+}'
