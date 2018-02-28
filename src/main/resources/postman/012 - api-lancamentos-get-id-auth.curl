@@ -1,0 +1,13 @@
+curl -X GET \
+  http://localhost:8090/api/lancamentos/2 \
+  -H 'authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJmdWxhbm9AaG90bWFpbC5jb20iLCJyb2xlIjoiUk9MRV9VU1VBUklPIiwiY3JlYXRlZCI6MTUxOTg2MTcxMzIyNiwiZXhwIjoxNTIwNDY2NTEzfQ.DNLR8SvQSKGUbRYvZroPlrJe3zLbKvgtAxYjjCVS31B-TxsN3-DjXWKxAhp7Ko5Lx2yJG1NDlmtSaoul463LYw' \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: c6107f20-4fa9-09c3-09ce-51a82b0c164a' \
+  -d '{
+	"data": "2018-02-26 09:00:00",
+	"tipo": "TERMINO_TRABALHO",
+	"descricao": "Término de Trabalho alterado",	
+	"localizacao": "1.23432,2.1235",
+	"funcionarioId": "2"
+}'

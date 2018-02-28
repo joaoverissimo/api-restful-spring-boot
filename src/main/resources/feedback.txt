@@ -1,3 +1,4 @@
+- O principal ponto negativo é que o instrutor apresenta o código e deixa as explicações no material de referência que é disponiblilizado com o curso. Minha expectativa era que as explicações fizem parte do curso e tivesse menos enfase em código.
 - O curso ficou mais como uma apresentação do código do que aulas com possíveis caminhos.
 - algumas explicações importantes estavam apenas no material de referência, que é disponibilizado com o curso. 
 - os controllers possuem muita lógica, legal seria refatorar para manter no service.

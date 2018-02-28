@@ -1,0 +1,9 @@
+curl -X POST \
+  http://localhost:8090/auth \
+  -H 'cache-control: no-cache' \
+  -H 'content-type: application/json' \
+  -H 'postman-token: 1ec7fead-7f7a-b5f8-813a-0002fbb7628a' \
+  -d '{
+	"email": "fulano@hotmail.com",
+	"senha": "123456"
+}'
